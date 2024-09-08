@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div id="form">
+      <form id="userform">
+        <textarea name="userpersonalinfo" id="userpersonalinfo" placeholder="Kindly Write A Brief Note About You!" required></textarea>
+        <label for="username">Name:</label>
+        <input id="username" type="text" name="username" placeholder="Enter Name" required>
+        <label for="userphone">Phone NO:</label>
+        <input id="userphone" type="text" name="userPhone" placeholder="Enter Phone No" required>
+        <label for="useremail">Email:</label>
+        <input id="useremail" type="email" name="userEmail" placeholder="Enter Email" required>
+        <label for="userAdress">Current Address:</label>
+        <input id="useradress" type="text" name="useradress" placeholder="Enter Current Address" required>
+        <!-- Work Experience -->
+        <label for="experienceInput">Work Experience:</label>
+        <input type="text" id="experienceInput" placeholder="Enter Your Work Experience!">
+        <button type="button" id="addExperience">Add Experience</button>
+        <!-- Skills -->
+        <label for="skillInput">Skills:</label>
+        <input type="text" id="skillInput" placeholder="Enter a skill">
+        <button type="button" id="addSkill">Add Skill</button>
+        <!-- Education -->
+        <label for="educationInput">Education:</label>
+        <input type="text" id="educationInput" placeholder="Enter Education">
+        <button type="button" id="addEducation">Add Education</button>
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="content" style="display: none;">
+      <header>
+        <h1 id="name" class="heading"></h1>
+      </header>
+      <main>
+        <div class="left">
+          <form action="">
+            <fieldset>
+              <legend id="profile">
+                <h2 class="heading">Profile</h2>
+              </legend>
+              <p id="personalInfo"></p>
+            </fieldset>
+          </form>
+          <form action="">
+            <fieldset>
+              <legend>
+                <h2>Work Experience</h2>
+              </legend>
+              <ul id="workexperiencelist"></ul>
+            </fieldset>
+          </form>
+          <form action="">
+            <fieldset>
+              <legend>
+                <h2>Skills</h2>
+              </legend>
+              <ul id="skillsList"></ul>
+            </fieldset>
+          </form>
+        </div>
+        <div>
+          <form action="">
+            <fieldset>
+              <legend class="legend">
+                <h2>Personal Details</h2>
+              </legend>
+              <ul>
+                <li id="usernamedata"></li>
+                <li id="userPhoneNumber"></li>
+                <li id="userEmail"></li>
+                <li id="userAdress"></li>
+              </ul>
+            </fieldset>
+          </form>
+          <form action="">
+            <fieldset>
+              <legend class="legend">
+                <h2>Education</h2>
+              </legend>
+              <ul id="educationList"></ul>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

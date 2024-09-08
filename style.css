@@ -1,0 +1,209 @@
+  
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+ }
+ 
+ /* Container for the Resume */
+ .content {
+   display: none; 
+   max-width: 900px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Header Styling */
+ header {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ /* Image in the Header */
+ /* header img {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 3px solid #007bff;
+ } */
+ 
+ /* Name Styling */
+ #name {
+   font-size: 36px;
+   font-weight: bold;
+   color: #333;
+   margin-top: 15px;
+ }
+ 
+ /* Main Content */
+ main {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+ }
+ 
+ /* Left Section */
+ .left {
+   flex: 1;
+ }
+ 
+ /* Form Fieldsets */
+ fieldset {
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+ }
+ 
+ /* Fieldset Legends */
+ legend h2 {
+   font-size: 20px;
+   color: #007bff;
+ }
+ 
+ /* Personal Details and Info */
+ ul {
+   list-style: none;
+   padding-left: 0;
+ }
+ 
+ ul li {
+   margin-bottom: 10px;
+   font-size: 16px;
+   color: #555;
+ }
+ 
+ #personalInfo {
+   font-size: 16px;
+   color: #666;
+   line-height: 1.6;
+ }
+ 
+ /* Work Experience & Skills List */
+ #workexperiencelist, #skillsList, #educationList {
+   margin-top: 10px;
+ }
+ 
+ #workexperiencelist li, #skillsList li, #educationList li {
+   background-color: #f1f1f1;
+   padding: 8px;
+   margin-bottom: 10px;
+   border-radius: 3px;
+ }
+ 
+ /* Right Section */
+ .right {
+   flex: 1;
+ }
+ 
+ /* Legends */
+ .legend {
+   font-size: 20px;
+   color: #007bff;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   main {
+     flex-direction: column;
+   }
+ }
+ 
+ /* #form {
+   height: auto;
+   width: 80vw;
+   padding: 10px;
+   ;
+ } */
+
+
+ /* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+ }
+ 
+ /* Styling the Form Container */
+ #form {
+   background-color: #f4f4f9;
+   padding: 20px;
+   width: 400px;
+   margin: 50px auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Styling the Form Inputs */
+ #form input, 
+ #form textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: #fafafa;
+ }
+ 
+ /* Styling Labels */
+ #form label {
+   display: block;
+   margin-top: 15px;
+   font-size: 14px;
+   color: #333;
+   font-weight: bold;
+ }
+ 
+ /* Styling Buttons */
+ #form button {
+   background-color: #007bff;
+   color: white;
+   padding: 10px 20px;
+   margin-top: 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ #form button:hover {
+   background-color: #0056b3;
+ }
+ 
+ /* Styling the Textarea */
+ #form textarea {
+   height: 100px;
+   resize: none;
+ }
+ 
+ /* Add a subtle hover effect on inputs */
+ #form input:focus, 
+ #form textarea:focus {
+   outline: none;
+   border: 1px solid #007bff;
+   background-color: #eef7ff;
+ }
+ 
+ /* Make the Submit Button Centered */
+ #form button[type="submit"] {
+   display: block;
+   width: 100%;
+ }
+ 
+ /* Responsive Design for Smaller Screens */
+ @media (max-width: 500px) {
+   #form {
+     width: 90%;
+     padding: 15px;
+   }
+ }
+   
